@@ -10,4 +10,5 @@ PRODUCT_PACKAGES += \
     BenzoBlock \
     KernelAdiutor \
     SnapBrowser \
-    Substratum
+    Substratum \
+    Turbo
