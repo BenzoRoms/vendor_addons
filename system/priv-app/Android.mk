@@ -1,0 +1,20 @@
+LOCAL_PATH := $(call my-dir)
+
+# Install KernelAdiutor
+include $(CLEAR_VARS)
+LOCAL_MODULE := KernelAdiutor
+LOCAL_SRC_FILES := KernelAdiutor.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := Turbo
+LOCAL_SRC_FILES := Turbo.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := platform
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
